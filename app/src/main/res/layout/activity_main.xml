@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/backgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/iv_makers_i"
+                android:layout_above="@id/v_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/wb"
+                />
+
+            <ViewFlipper
+                android:id="@+id/v_flipper"
+                android:layout_width="350dp"
+                android:layout_height="280dp"
+                android:paddingTop="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:id="@+id/tv_op"
+                android:textColor="#F4AF1C"
+                android:textStyle="bold"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/v_flipper"
+                android:gravity="center_horizontal"
+                android:text="Make an easy payment"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/btn_registrasi"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/buttononshape"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="MASUK"
+                    android:textColor="#FFFFFF"
+
+                    android:textSize="30sp" />
+                <TextView
+                    android:id="@+id/tv_makepocket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAKE E-POCKET"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="13dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
